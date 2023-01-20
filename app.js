@@ -4,10 +4,11 @@ const app = express();
 
 const mainRouter = require("./routes/mainRouter");
 
-app.set("view engine", "ejs");
-
 // Middlewares
+app.use(express.static("public"));
 app.use(express.json());
+
+app.set("view engine", "ejs");
 
 // Routes
 app.use ("/", mainRouter)
