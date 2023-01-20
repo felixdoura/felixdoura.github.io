@@ -26,25 +26,77 @@
     <section id="home" class="home">
         <div class="home-background"></div>
         <picture>
-            <source type="image/jpg" srcset="./public/images/img-perfil-informal.jpg">
-            <img class="home-profile" alt="profile picture">
+            <source type="image/webp" srcset="../public/images/img-perfil-informal.webp">
+            <img class="home-profile" alt="profile picture" data-sr-id="2" style="visibility: visible; opacity: 1; transition: filter 3s ease 0s, opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.35s; ">
         </picture>
-        <div class="home-description">Felix Doura</div>
+        <div class="home-description">
+            <h1 class="home-title">Felix Doura</h1>
+            <span class="home-title-secondary">Full Stack Developer</span>
+        </div>
     </section>
 
 
-    <section id="about-me">
-        <h2>About Me</h2>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Myself</h2>
+            <div class="about-grid">
+                <div class="about-description">
+                    <h2>Full Stack Developer</h2>
+                    <p></p>
+                    <p></p>
+                    <a class="cv-button" href="../public/CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="about-skills">
+                    <div class="skills-title">
+                        Skills and Tech
+                    </div>
+                    <div class="skill-item">
+                        <!-- ACA TENGO QUE HACER ITERACION DE ITEMS CON EJS -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
     <section id="portfolio">
-        <h3>Portfolio</h3>
+        <div class="container">
+            <h2 class="section-class">Portfolio</h2>
+            <h3 class="section-subtitle">In the following section, You will find the projects I have been working on.
+                <div class="portfolio-grid">
+
+                </div>
+            </h3>
+        </div>
     </section>
 
 
     <section id="contact">
-        <h3>Contact</h3>
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <h3 class="section-subtitle">Here You will find the channels to contact me</h3>
+            <div class="contact-grid">
+                <a href="mailto:felixdoura@hotmail.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/felixdoura" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/felixdoura/" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
     </section>
 
 
