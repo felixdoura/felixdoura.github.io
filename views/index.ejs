@@ -2,113 +2,133 @@
 <html lang="en">
 
 <!-- Head -->
-<%- include ("./partials/head", {title: "Felix Doura || Full Stack Developer", style: "/css/styleIndex.css"}) %> 
+<%- include ("./partials/head", {title: "Felix Doura || Full Stack Developer" , style: "/css/styleIndex.css" }) %>
 
-<body>
+    <body>
 
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-logo">
-                <p class="navbar-title">
-                    <a href="#">L</a>
-                </p>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-logo">
+                    <p class="navbar-title">
+                        <a href="#">L</a>
+                    </p>
+                </div>
+                <div class="navbar-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="navbar-links">
+                    <li class="navbar-link" data-ref="home"><a href="#home">Home</a></li>
+                    <li class="navbar-link" data-ref="about"><a href="#about">About</a></li>
+                    <li class="navbar-link" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
+                    <li class="navbar-link" data-ref="contact"><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="navbar-menu">
-                <i class="fas fa-bars"></i>
+        </nav>
+
+        <section id="home" class="home">
+            <div class="home-background"></div>
+            <picture>
+                <source type="image/webp" srcset="../public/images/img-perfil-informal.webp">
+                <img class="home-profile" alt="profile picture">
+            </picture>
+            <div class="home-description">
+                <h1 class="home-title">Felix Doura</h1>
+                <span class="home-title-secondary">Full Stack Developer</span>
             </div>
-            <ul class="navbar-links">
-                <li class="navbar-link" data-ref="home"><a href="#home">Home</a></li>
-                <li class="navbar-link" data-ref="about"><a href="#about">About</a></li>
-                <li class="navbar-link" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
-                <li class="navbar-link" data-ref="contact"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section id="home" class="home">
-        <div class="home-background"></div>
-        <picture>
-            <source type="image/webp" srcset="../public/images/img-perfil-informal.webp">
-            <img class="home-profile" alt="profile picture">
-        </picture>
-        <div class="home-description">
-            <h1 class="home-title">Felix Doura</h1>
-            <span class="home-title-secondary">Full Stack Developer</span>
-        </div>
-    </section>
+        </section>
 
 
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Myself</h2>
-            <div class="about-grid">
-                <div class="about-description">
-                    <h2>Full Stack Developer</h2>
-                    <p></p>
-                    <p></p>
-                    <a class="cv-button" href="../public/CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-file-download"></i>
-                        Download CV
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Myself</h2>
+                <div class="about-grid">
+                    <div class="about-description">
+                        <h2>Full Stack Developer</h2>
+                        <p></p>
+                        <p></p>
+                        <a class="cv-button" href="../public/CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-download"></i>
+                            Download CV
+                        </a>
+                    </div>
+                    <div class="about-skills">
+                        <div class="skills-title">
+                            Skills and Tech
+                        </div>
+
+                        <div class="skill-item">
+                            <!-- ACA TENGO QUE HACER ITERACION DE ITEMS CON EJS -->
+
+                            <% skills.forEach(skill => { %>
+                                <article>
+                                    <a href="/dataBase/<%= skill.id %>">
+                                        <div class="imagen">
+                                            <img src="/images/<%= skill.image %>" alt="skill-img">
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                <%= skill.name %>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </article>
+                                <% }) %>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio">
+            <div class="container">
+                <h2 class="section-class">Portfolio</h2>
+                <h3 class="section-subtitle">In the following section, You will find the projects I have been working
+                    on.
+                    <div class="portfolio-grid">
+                        <!-- ACA VAN LOS PROYECTOS BAJO LA CLASE "portfolio-item" -->
+
+                        <div class="portfolio-item">
+
+                        </div>
+
+                    </div>
+                </h3>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <h3 class="section-subtitle">Here You will find the channels to contact me</h3>
+                <div class="contact-grid">
+                    <a href="mailto:felixdoura@hotmail.com" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                        </div>
                     </a>
-                </div>
-                <div class="about-skills">
-                    <div class="skills-title">
-                        Skills and Tech
-                    </div>
-                    <div class="skill-item">
-                        <!-- ACA TENGO QUE HACER ITERACION DE ITEMS CON EJS -->
-                    </div>
+                    <a href="https://github.com/felixdoura" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/felixdoura/" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="section-class">Portfolio</h2>
-            <h3 class="section-subtitle">In the following section, You will find the projects I have been working on.
-                <div class="portfolio-grid">
-                    <!-- ACA VAN LOS PROYECTOS BAJO LA CLASE "portfolio-item" -->
-
-                    <div class="portfolio-item">
-
-                    </div>
-
-                </div>
-            </h3>
-        </div>
-    </section>
-
-
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <h3 class="section-subtitle">Here You will find the channels to contact me</h3>
-            <div class="contact-grid">
-                <a href="mailto:felixdoura@hotmail.com" target="_blank" rel="noopener noreferrer">
-                    <div class="contact-item">
-                        <i class="far fa-envelope"></i>
-                    </div>
-                </a>
-                <a href="https://github.com/felixdoura" target="_blank" rel="noopener noreferrer">
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/felixdoura/" target="_blank" rel="noopener noreferrer">
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Icon Script -->
-    <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
-</body>
+        <!-- Icon Script -->
+        <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
+    </body>
 
 </html>

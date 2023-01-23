@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "name": "JavaScript",
+        "description": "Conocimientos en JavaScript",
+        "image": "javascript.svg",
+        "category": "skill"
+    }
+]

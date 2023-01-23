@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 
 const mainRouter = require("./routes/mainRouter");
+const skillsRouter = require("./routes/skillsRouter");
 
 // Middlewares
 app.use(express.static("public"));
