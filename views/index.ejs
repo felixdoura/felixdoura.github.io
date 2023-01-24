@@ -44,8 +44,8 @@
                 <div class="about-grid">
                     <div class="about-description">
                         <h2>Full Stack Developer</h2>
-                        <p></p>
-                        <p></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <a class="cv-button" href="../public/CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-download"></i>
@@ -53,29 +53,24 @@
                         </a>
                     </div>
                     <div class="about-skills">
+
                         <div class="skills-title">
                             Skills and Tech
                         </div>
-
-                        <div class="skill-item">
-                            <!-- ACA TENGO QUE HACER ITERACION DE ITEMS CON EJS -->
-
+                        
+                        <div class="skills-items-container">
                             <% skills.forEach(skill => { %>
-                                <article>
-                                    <a href="/dataBase/<%= skill.id %>">
-                                        <div class="imagen">
-                                            <img src="/images/<%= skill.image %>" alt="skill-img">
-                                        </div>
-                                        <div class="description">
-                                            <p>
-                                                <%= skill.name %>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </article>
-                                <% }) %>
-
-
+                                <div href="/dataBase/<%= skill.id %>" class="skill-item">
+                                    <div class="imagen">
+                                        <img src="/images/<%= skill.image %>" alt="skill-img">
+                                    </div>
+                                    <div class="skills-description">
+                                        <p>
+                                            <%= skill.name %>
+                                        </p>
+                                    </div>
+                                </div>
+                            <% }) %>
                         </div>
                     </div>
                 </div>

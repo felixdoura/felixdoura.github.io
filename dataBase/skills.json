@@ -5,5 +5,19 @@
         "description": "Conocimientos en JavaScript",
         "image": "javascript.svg",
         "category": "skill"
+    },
+    {
+        "id": 2,
+        "name": "HTML5",
+        "description": "Conocimientos en HTML",
+        "image": "html5.svg",
+        "category": "skill"
+    },
+    {
+        "id": 3,
+        "name": "CSS",
+        "description": "Conocimientos en CSS",
+        "image": "css.svg",
+        "category": "skill"
     }
 ]
