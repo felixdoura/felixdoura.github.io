@@ -3,21 +3,28 @@
         "id": 1,
         "name": "JavaScript",
         "description": "Conocimientos en JavaScript",
-        "image": "javascript.svg",
+        "image": "javascript.png",
         "category": "skill"
     },
     {
         "id": 2,
-        "name": "HTML5",
+        "name": "HTML",
         "description": "Conocimientos en HTML",
-        "image": "html5.svg",
+        "image": "html.png",
         "category": "skill"
     },
     {
         "id": 3,
         "name": "CSS",
         "description": "Conocimientos en CSS",
-        "image": "css.svg",
+        "image": "css.png",
+        "category": "skill"
+    },
+    {
+        "id": 4,
+        "name": "React",
+        "description": "Conocimientos en React",
+        "image": "react.png",
         "category": "skill"
     }
 ]

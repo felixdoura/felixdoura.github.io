@@ -142,9 +142,11 @@ section {
 }
 
 .section-subtitle {
-    color: var(--grey);
-    text-align: start;
-    margin-bottom: 20px;
+    font-size: 20px;
+    color: grey;
+    text-align: left;
+    margin: 20px 0;
+    font-weight: bold;
 }
 
 .about-grid {
@@ -162,8 +164,11 @@ section {
 }
 
 .about-description h2 {
+    font-size: 20px;
     color: grey;
+    text-align: left;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .about-skills {
@@ -174,30 +179,34 @@ section {
 }
 
 .skills-title {
+    font-size: 20px;
     color: grey;
     text-align: left;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .skills-items-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 1fr 1fr 1fr 1fr);
+    grid-template-columns: 1fr;
     gap: 10px;
 }
+
 
 .skill-item {
     max-width: 30%;
     font-size: 65px;
     color: var(--grey);
-    padding: 35px;
+    padding: 25px;
     transition: all 0.3s;
     min-width: 130px;
     height: 180px;
+    justify-self: center;
 }
 
-.skills-item img {
-    max-height: auto;
-    max-width: 100%;
+.skill-item img{
+    width: 100%;
+    height: auto;
 }
 
 .skills-description {
@@ -260,13 +269,13 @@ section {
     transform: scale(1.3);
 }
 
-/* .portfolio-description--title {
+.portfolio-description--title {
     color: var(--white);
   }
   
   .portfolio-description--text {
     margin: 20px 0;
-  } */
+  }
 
 .buttons-container {
     display: flex;
@@ -287,8 +296,8 @@ section {
 
 .cv-button {
 
-    background: var(--blue);
-    color: var(--white);
+    background: yellowgreen;
+    color: black;
     padding: 5px 30px;
     display: inline-block;
     align-self: center;
@@ -302,8 +311,8 @@ section {
 }
 
 .cv-button:hover {
-    background: green;
-    color: red;
+    background: blue;
+    color: white;
 }
 
 .button .fa-github:before {
@@ -313,7 +322,7 @@ section {
 .contact-grid {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -333,6 +342,10 @@ section {
 
 .fa-linkedin-in {
     color: #0e76a8;
+}
+
+.fa-discord {
+    color: #7289d9;
 }
 
 .contact-item i {
@@ -360,6 +373,11 @@ section {
     color: var(--grey);
 }
 
+.fa-discord:hover {
+    transition: all 0.3s;
+    color: var(--grey);
+}
+
 .active a {
     color: #f5f5f5;
 }
@@ -371,11 +389,24 @@ section {
         font-family: 'Roboto', sans-serif;
         background-color: var(--Gris-claro);
     }
+
+    .skills-items-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
 }
 
 @media (min-width: 1024px){
     body{
         font-family: 'Roboto', sans-serif;
         background-color: var(--Gris-claro);
+    }
+
+    .skills-items-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: inherit;
     }
 }

@@ -28,8 +28,8 @@
         <section id="home" class="home">
             <div class="home-background"></div>
             <picture>
-                <source type="image/webp" srcset="../public/images/img-perfil-informal.webp">
-                <img class="home-profile" alt="profile picture">
+                <source srcset="../public/images/img-perfil-informal.jpg" type="image/jpg" media="(min-width: 150px)">
+                <img src="../public/images/img-perfil-informal.jpg" class="home-profile" alt="profile picture">
             </picture>
             <div class="home-description">
                 <h1 class="home-title">Felix Doura</h1>
@@ -61,14 +61,14 @@
                         <div class="skills-items-container">
                             <% skills.forEach(skill => { %>
                                 <div href="/dataBase/<%= skill.id %>" class="skill-item">
-                                    <div class="imagen">
-                                        <img src="/images/<%= skill.image %>" alt="skill-img">
-                                    </div>
+
+                                    <img src="/images/<%= skill.image %>" alt="skill-img">
                                     <div class="skills-description">
                                         <p>
                                             <%= skill.name %>
                                         </p>
                                     </div>
+
                                 </div>
                             <% }) %>
                         </div>
@@ -80,13 +80,39 @@
 
         <section id="portfolio">
             <div class="container">
-                <h2 class="section-class">Portfolio</h2>
+                <h2 class="section-title">Portfolio</h2>
                 <h3 class="section-subtitle">In the following section, You will find the projects I have been working
                     on.
                     <div class="portfolio-grid">
-                        <!-- ACA VAN LOS PROYECTOS BAJO LA CLASE "portfolio-item" -->
-
                         <div class="portfolio-item">
+                            <picture>
+                                <source srcset="../public/images/mercadoliebre.jpeg" />
+                                <img class="portfolio-img" alt="portfolio item" />
+                              </picture>
+                              <div class="portfolio-description">
+                                <h3 class="portfolio-description--title">MercadoLiebre</h3>
+                                <p class="portfolio-description--text">
+                                  Web Marketplace: Node Js, JavaScript
+                                </p>
+                                <div class="buttons-container">
+                                  <a
+                                    class="button"
+                                    href="https://mercadoliebre-felixdoura.onrender.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <i class="fas fa-globe-americas"></i> Website
+                                  </a>
+                                  <a
+                                    class="button"
+                                    href="https://github.com/felixdoura/MercadoLiebre"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <i class="fab fa-github"></i> Repository
+                                  </a>
+                                </div>
+
 
                         </div>
 
@@ -114,6 +140,11 @@
                     <a href="https://www.linkedin.com/in/felixdoura/" target="_blank" rel="noopener noreferrer">
                         <div class="contact-item">
                             <i class="fab fa-linkedin-in"></i>
+                        </div>
+                    </a>
+                    <a href="https://discord.gg/Km899xDQWV" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-item">
+                            <i class="fa-brands fa-discord"></i>
                         </div>
                     </a>
 
