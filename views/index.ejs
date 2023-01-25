@@ -27,14 +27,14 @@
 
         <section id="home" class="home">
             <div class="home-background"></div>
-            <picture>
-                <source srcset="../public/images/img-perfil-informal.jpg" type="image/jpg" media="(min-width: 150px)">
-                <img src="../public/images/img-perfil-informal.jpg" class="home-profile" alt="profile picture">
-            </picture>
             <div class="home-description">
                 <h1 class="home-title">Felix Doura</h1>
                 <span class="home-title-secondary">Full Stack Developer</span>
             </div>
+            <picture class="profile-picture-container">
+                <source srcset="../images/img-perfil-informal.jpg" type="image/jpg" media="(min-width: 150px)">
+                <img class="home-profile" alt="profile picture">
+            </picture>
         </section>
 
 
@@ -44,8 +44,12 @@
                 <div class="about-grid">
                     <div class="about-description">
                         <h2>Full Stack Developer</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.</p>
                         <a class="cv-button" href="../public/CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf"
                             target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-file-download"></i>
@@ -57,9 +61,9 @@
                         <div class="skills-title">
                             Skills and Tech
                         </div>
-                        
+
                         <div class="skills-items-container">
-                            <% skills.forEach(skill => { %>
+                            <% skills.forEach(skill=> { %>
                                 <div href="/dataBase/<%= skill.id %>" class="skill-item">
 
                                     <img src="/images/<%= skill.image %>" alt="skill-img">
@@ -77,46 +81,39 @@
             </div>
         </section>
 
-
         <section id="portfolio">
             <div class="container">
                 <h2 class="section-title">Portfolio</h2>
                 <h3 class="section-subtitle">In the following section, You will find the projects I have been working
                     on.
                     <div class="portfolio-grid">
+
                         <div class="portfolio-item">
                             <picture>
-                                <source srcset="../public/images/mercadoliebre.jpeg" />
+                                <source srcset="../images/mercadoliebre.jpeg" type="image/jpeg">
                                 <img class="portfolio-img" alt="portfolio item" />
-                              </picture>
-                              <div class="portfolio-description">
+                            </picture>
+
+                            <div class="portfolio-description">
                                 <h3 class="portfolio-description--title">MercadoLiebre</h3>
                                 <p class="portfolio-description--text">
-                                  Web Marketplace: Node Js, JavaScript
+                                    Web Marketplace: Node Js, JavaScript
                                 </p>
                                 <div class="buttons-container">
-                                  <a
-                                    class="button"
-                                    href="https://mercadoliebre-felixdoura.onrender.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <i class="fas fa-globe-americas"></i> Website
-                                  </a>
-                                  <a
-                                    class="button"
-                                    href="https://github.com/felixdoura/MercadoLiebre"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    <i class="fab fa-github"></i> Repository
-                                  </a>
+                                    <a class="button" href="https://mercadoliebre-felixdoura.onrender.com"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-globe-americas"></i> Website
+                                    </a>
+                                    <a class="button" href="https://github.com/felixdoura/MercadoLiebre" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i> Repository
+                                    </a>
                                 </div>
 
 
-                        </div>
+                            </div>
 
-                    </div>
+                        </div>
                 </h3>
             </div>
         </section>
