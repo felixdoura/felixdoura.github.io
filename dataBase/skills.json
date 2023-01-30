@@ -26,5 +26,12 @@
         "description": "Conocimientos en React",
         "image": "react.png",
         "category": "skill"
+    },
+    {
+        "id": 5,
+        "name": "Node JS",
+        "description": "Conocimientos en Node JS",
+        "image": "nodejs.png",
+        "category": "skill"
     }
 ]

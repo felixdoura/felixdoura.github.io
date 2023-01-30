@@ -30,7 +30,7 @@ section {
 .container {
     width: 100%;
     display: inherit;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     justify-content: inherit;
     margin: 0 auto;
     padding: 0 20px;
@@ -68,6 +68,7 @@ section {
 
 .navbar-links {
     display: none;
+    float: right;
 }
 
 .navbar-link {
@@ -84,12 +85,41 @@ section {
     transition: color 0.3s;
 }
 
-.navbar-menu {
+#check{
+    display: none;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: fixed;
+    margin-right: 10px;
+}
+
+.check-button {
     display: flex;
     align-items: center;
     font-size: 35px;
-    color: white
+    color: white;
 }
+/* desde aca */
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+
+li a:hover, li a.active{
+    background: transparent;
+    color: blue;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+/* hasta aca */
 
 .home {
     min-height: 100vh;
@@ -414,7 +444,7 @@ section {
         background-color: var(--Gris-claro);
     }
 
-    .navbar-menu {
+    .check-button {
         display: none;
         align-items: center;
         font-size: 35px;
