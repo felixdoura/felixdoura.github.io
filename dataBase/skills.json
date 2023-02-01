@@ -33,5 +33,12 @@
         "description": "Conocimientos en Node JS",
         "image": "nodejs.png",
         "category": "skill"
+    },
+    {
+        "id": 6,
+        "name": "MySQL",
+        "description": "Conocimientos en MySQL",
+        "image": "mysql.png",
+        "category": "skill"
     }
 ]
