@@ -30,7 +30,7 @@ section {
 .container {
     width: 100%;
     display: inherit;
-    /* max-width: 1200px; */
+    max-width: 1200px;
     justify-content: inherit;
     margin: 0 auto;
     padding: 0 20px;
@@ -38,7 +38,8 @@ section {
 
 .navbar {
     position: fixed;
-    background: transparent;
+    background: black;
+    opacity: 0.5;
     display: flex;
     justify-content: space-between;
     height: 60px;
