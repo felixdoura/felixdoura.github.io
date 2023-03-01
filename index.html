@@ -1,15 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRUEBA 01</title>
-</head>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="In this website you will be able to find all the information about myself, the projects I have done and how You can contact me.">
+        <meta property="og:description" content="In this website you will be able to find all the information about myself, the projects I have done and how You can contact me.">
+        <meta property="og:title" content="Felix Doura || Full Stack Developer">
+        <meta property="og:type" content="website">
+    
+        <!-- Iconos -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+        <!-- Fuente Roboto Slab regular 400 y Rubik Distressed 400 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    
+        <!-- Link al archivo CSS -->
+        <link href="/css/styleIndex.css" rel="stylesheet">
+    
+        <title>Felix Doura || Fullstack Web Developer</title>
+    
+    </head>
+
 <body>
-    <div>
-        <h1>HELLO WORLD</h1>
-        Subtitulo
-    </div>
+
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="navbar-logo">
+                <p class="navbar-title">
+                    <a href="#">L</a>
+                </p>
+            </div>
+
+            <label for="check" class="check-button">
+                <input class="navbar-menu" id="check">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="navbar-links">
+                <li class="navbar-link" data-ref="home"><a href="#home">Home</a></li>
+                <li class="navbar-link" data-ref="about"><a href="#about">About</a></li>
+                <li class="navbar-link" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li class="navbar-link" data-ref="contact"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="home-background"></div>
+        <div class="home-description">
+            <h1 class="home-title">Felix Doura</h1>
+            <span class="home-title-secondary">Full Stack Developer</span>
+        </div>
+        <picture class="profile-picture-container">
+            <source srcset="../images/img-perfil-informal.jpg" type="image/jpg" media="(min-width: 150px)">
+            <img class="home-profile" alt="profile picture">
+        </picture>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Myself</h2>
+            <div class="about-grid">
+                <div class="about-description">
+                    <h2>Full Stack Developer</h2>
+                    <p>Hello, Welcome to my website, my name is Felix Doura, since a young age I have been around computers and found a great passion on playing videogames and creating content on a such beatiful and powerful device. I didn't understand that at the moment but the spark was lit.
+                    </p>
+                    <p>Today I can see that programming is my vocation and what really makes me happy. There is no greater joy than being able to create anything with the tools given by the power of the computer.</p>
+                    <a class="cv-button" href="../CV-Felix-Doura.pdf" download="CV-Felix-Doura.pdf" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-file-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="about-skills">
+
+                    <div class="skills-title">
+                        Skills and Tech
+                    </div>
+
+                    <div class="skills-items-container">
+                        <!-- SKILLS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <h3 class="section-subtitle">In the following section, You will find the projects I have been working on.
+                <div class="portfolio-grid">
+
+                    <div class="portfolio-item">
+                        <picture>
+                            <source srcset="../images/mercadoliebre.jpeg" type="image/jpeg">
+                            <img class="portfolio-img" alt="portfolio item" />
+                        </picture>
+
+                        <div class="portfolio-description">
+                            <h3 class="portfolio-description--title">MercadoLiebre</h3>
+                            <p class="portfolio-description--text">
+                                Web Marketplace - NodeJs, JavaScript, EJS, CSS
+                            </p>
+                            <div class="buttons-container">
+                                <a class="button" href="https://mercadoliebre-felixdoura.onrender.com"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-globe-americas"></i> Website
+                                </a>
+                                <a class="button" href="https://github.com/felixdoura/MercadoLiebre" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <picture>
+                            <source srcset="../images/calculadora.jpg" type="image/jpg">
+                            <img class="portfolio-img" alt="portfolio item" />
+                        </picture>
+
+                        <div class="portfolio-description">
+                            <h3 class="portfolio-description--title">Calculator</h3>
+                            <p class="portfolio-description--text">
+                                Calculator - JavaScript, HTML & CSS
+                            </p>
+                            <div class="buttons-container">
+                                <a class="button" href="#"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-globe-americas"></i> Website
+                                </a>
+                                <a class="button" href="https://github.com/felixdoura/calculadora-01.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </h3>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <h3 class="section-subtitle">Here You will find the channels to contact me</h3>
+            <div class="contact-grid">
+                <a href="mailto:felixdoura@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/felixdoura" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/felixdoura/" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+                <a href="https://discord.gg/Km899xDQWV" target="_blank" rel="noopener noreferrer">
+                    <div class="contact-item">
+                        <i class="fa-brands fa-discord"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Icon Script -->
+    <script src="https://kit.fontawesome.com/6cd48854d2.js" crossorigin="anonymous"></script>
+
 </body>
+
+
 </html>
