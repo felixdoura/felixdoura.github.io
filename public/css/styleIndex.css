@@ -47,6 +47,10 @@ section {
     z-index: 3;
 }
 
+#desktop-menu{
+    display: none;
+}
+
 #menuToggle
 {
   display: block;
@@ -502,6 +506,24 @@ section {
     body{
         font-family: 'Roboto', sans-serif;
         background-color: var(--Gris-claro);
+    }
+
+    #menuToggle{
+        display: none;
+    }
+
+    #desktop-menu{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 30px;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    #desktop-menu a:hover{
+        color: green;
     }
 
     .about-description {
