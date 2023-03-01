@@ -19,7 +19,7 @@ body {
     font-family: "Roboto", sans-serif;
     background: white;
     color: black;
-    max-width: 100%;
+    width: 100%;
 }
 
 section {
@@ -44,7 +44,7 @@ section {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    width: 100%;
+    max-width: 100%;
     z-index: 5;
     transition: background 0.5s;
 }
@@ -103,7 +103,7 @@ section {
     color: white;
     margin-right: 2%;
 }
-/* desde aca */
+
 nav ul li{
     display: block;
     margin: 50px 0;
