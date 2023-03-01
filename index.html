@@ -27,28 +27,21 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="container">
-
-            <div class="navbar-logo">
-                <p class="navbar-title">
-                    <a href="#">L</a>
-                </p>
-            </div>
-
-            <label for="check" class="check-button">
-                <input class="navbar-menu" id="check">
-                <i class="fas fa-bars"></i>
-            </label>
-
-            <ul class="navbar-links">
-                <li class="navbar-link" data-ref="home"><a href="#home">Home</a></li>
-                <li class="navbar-link" data-ref="about"><a href="#about">About</a></li>
-                <li class="navbar-link" data-ref="portfolio"><a href="#portfolio">Portfolio</a></li>
-                <li class="navbar-link" data-ref="contact"><a href="#contact">Contact</a></li>
+    <nav class="navigation">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>About Myself</li></a>
+                <a href="#portfolio"><li>Porfolio</li></a>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </div>
     </nav>
+
 
     <section id="home" class="home">
         <div class="home-background"></div>
