@@ -22,8 +22,12 @@ body {
     max-width: 100%;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 section {
-    padding: 90px 0;
+    padding: 10px 0;
     text-align: center;
     background: white;
 }
@@ -34,7 +38,7 @@ section {
     max-width: 1200px;
     justify-content: inherit;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 25px 20px 0 20px;
 }
 
 .navigation{
@@ -218,6 +222,7 @@ section {
     color: var(--grey);
     font-size: 35px;
     margin-bottom: 30px;
+    margin-top: 40px;
     display: flex;
 }
 
@@ -476,14 +481,11 @@ section {
 
     .about-grid {
     max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
     }
 
     .skills-items-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
     }
 
@@ -535,7 +537,7 @@ section {
 
     .skills-items-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         gap: 10px;
         margin: inherit;
     }
