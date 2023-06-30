@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/felixdoura.github.io/static/css/main.5e84d5af.css",
+    "main.js": "/felixdoura.github.io/static/js/main.8cd28418.js",
+    "index.html": "/felixdoura.github.io/index.html",
+    "main.5e84d5af.css.map": "/felixdoura.github.io/static/css/main.5e84d5af.css.map",
+    "main.8cd28418.js.map": "/felixdoura.github.io/static/js/main.8cd28418.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5e84d5af.css",
+    "static/js/main.8cd28418.js"
+  ]
+}
