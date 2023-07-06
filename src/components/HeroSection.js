@@ -6,7 +6,9 @@ import { BsDiscord } from 'react-icons/bs'
 function HeroSection() {
     return (
         <div className='hero-container'>
-            {/* <video src='/videos/video-solar.mp4' autoPlay loop muted /> */}
+            <div className='profile-pic-container'>
+                <img src='./images/profile-01.jpg' alt='profile-pic' />
+            </div>
             <div className='hero-btns'>
                 <a
                     href='https://discord.gg/Km899xDQWV'
