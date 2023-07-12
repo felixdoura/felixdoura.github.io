@@ -1,0 +1,6 @@
+@import url('../App.css');
+
+.hero-buttons a{
+    color: #fff;
+    text-decoration: none;
+}

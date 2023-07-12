@@ -3,6 +3,17 @@
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
+
+  /* Color Palette */
+  --azul: #002868;
+  --peach-yellow :#E1CA96;
+  --sage: #ACA885;
+  --battleship-gray: #918B76;
+  --ebony: #626C66;
+  --black-olive: #434A42;
+  --papaya-whip: #FFF1D0;
 }
+
+
 
 
