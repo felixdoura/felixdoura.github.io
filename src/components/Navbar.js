@@ -15,7 +15,7 @@ function Navbar() {
         <div className="navbar-container">
           <div className='logo-container'>
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src={process.env.PUBLIC_URL + '/images/felix-el-gato.png'} alt='logo' className="logo-img" />
+              <img src={process.env.PUBLIC_URL + '/images/sparrowhawk-01.jpg'} alt='logo' className="logo-img" />
             </Link>
           </div>
           <div className="menu-icon" onClick={handleClick}>

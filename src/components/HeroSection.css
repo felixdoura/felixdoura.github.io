@@ -1,11 +1,8 @@
-@import url('../App.css');
-
 .hero-container {
-    background-color: whitesmoke;
-    height: 50vh;
+    background: white;
+    height: 70vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     object-fit: fill;
@@ -13,9 +10,14 @@
 
 .hero-wrapper {
     display: flex;
-    flex-direction: column;
+    gap: 8rem;
     align-items: center;
     justify-content: center;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 .profile-pic-container {
@@ -25,13 +27,6 @@
 }
 
 .profile-pic {
-    max-width: 60%;
     border-radius: 50%;    
     border: 2px solid #000;
-}
-
-.hero-buttons {
-    background-color: var(--azul);
-    padding: 4px;
-    border-radius: 5px;
 }
