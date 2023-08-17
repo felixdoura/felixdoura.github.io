@@ -1,0 +1,149 @@
+.sections {
+    background-color: black;
+}
+
+/* ------------ */
+/* HERO SECTION */
+/* ------------ */
+
+.hero-section {
+    padding: 3rem 10rem;
+}
+
+
+/* ------------- */
+/* ABOUT SECTION */
+/* ------------- */
+
+.about-section {
+    padding: 3rem 10rem;
+    background-color: black;
+    color: white;
+
+}
+
+
+
+/* ------------- */
+/* STACK SECTION */
+/* ------------- */
+
+.stack-section {
+    padding: 3rem 10rem;
+    background-color: blue;
+    color: white;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    height: 85%;
+    width: 100%;
+}
+
+/* ----------------- */
+/* PORTFOLIO SECTION */
+/* ----------------- */
+
+.portfolio-section {
+    padding: 3rem 10rem;
+    background-color: blue;
+    color: white;
+}
+
+/* ------------- */
+/* EDUCATION SECTION */
+/* ------------- */
+
+.education-section {
+    padding: 12rem 10rem 3rem 10rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(147,28,28,1) 65%, rgba(147,28,28,1) 100%);
+    color: white;
+    position: relative;
+}
+
+.education-top-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.education-top-divider svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 171px;
+    transform: rotateY(180deg);
+}
+
+.education-top-divider .shape-fill {
+    fill: blue;
+}
+
+
+
+/* -------------------- */
+/* SOCIAL MEDIA SECTION */
+/* -------------------- */
+
+.bg-social-media {
+    aspect-ratio: 1800/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-layer {
+    background-image: url('../../public/images/bg-social-media.svg');
+}
+
+
+.social-media-section {
+    background-color: #931C1C;
+
+}
+
+.social-media-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 6rem 10rem 0 10rem;
+}
+
+.social-media-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgba(145, 139, 118, 0.5);
+    border-radius: 50%;
+    font-size: 4.5rem;
+    width: 8rem;
+    height: 8rem;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.social-media-button:hover {
+    background-color: var(--azul);
+}
+
+.social-media-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.8s;
+}
+
+.social-media-button a:hover {
+    color: lightgray;
+}
+
+.discord-link {
+    color: #5865F2
+}
