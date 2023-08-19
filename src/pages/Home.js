@@ -8,6 +8,7 @@ import SectionAbout from '../components/SectionAbout'
 import SectionStack from '../components/SectionStack'
 import SectionPortfolio from '../components/SectionPortfolio'
 import SectionEducation from '../components/SectionEducation'
+import SectionExperience from '../components/SectionExperience'
 
 const Home = () => {
   return (
@@ -44,6 +45,14 @@ const Home = () => {
         {/* ----------------- */}
         <section className='portfolio-section'>
           <SectionPortfolio />
+        </section>
+
+
+        {/* ------------------ */}
+        {/* EXPERIENCE SECTION */}
+        {/* ------------------ */}
+        <section className='experience-section'>
+          <SectionExperience />
         </section>
 
 

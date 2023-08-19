@@ -50,14 +50,53 @@
     color: white;
 }
 
-/* ------------- */
-/* EDUCATION SECTION */
-/* ------------- */
 
-.education-section {
-    padding: 12rem 10rem 3rem 10rem;
+/* ----------------- */
+/* EXPERIENCE SECTION */
+/* ----------------- */
+
+.experience-section {
+    padding: 14rem 10rem 3rem 10rem;
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(147, 28, 28, 1) 65%, rgba(147, 28, 28, 1) 100%);
+    color: white;
+    position: relative;
+}
+
+.experience-top-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.experience-top-divider svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 171px;
+    transform: rotateY(180deg);
+}
+
+.experience-top-divider .shape-fill {
+    fill: #03254C;
+}
+
+@media screen and (max-width: 990px) {
+    .experience-top-divider svg {
+        height: 70px;
+    }
+}
+
+/* ----------------- */
+/* EDUCATION SECTION */
+/* ----------------- */
+
+.education-section {
+    padding: 4rem 10rem;
+    background: #931C1C;
     color: white;
     position: relative;
 }
@@ -114,7 +153,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 6rem 10rem 0 10rem;
+    padding: 2rem 10rem 0 10rem;
 }
 
 .social-media-button {
