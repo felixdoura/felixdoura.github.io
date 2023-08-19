@@ -30,3 +30,20 @@
     border-radius: 50%;    
     border: 2px solid #000;
 }
+
+@media screen and (max-width: 990px) {
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .hero-wrapper .profile-pic {
+        max-width: 100%;
+    }
+}

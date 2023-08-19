@@ -1,4 +1,15 @@
 .footer-container {
     background-color: #871400;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 4rem 10rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .footer-container {
+        padding: 0 4rem 2rem 4rem;
+    }
 }
