@@ -13,7 +13,7 @@ function SectionEducation() {
         </svg>
       </div>
         <div className='education-wrapper'>
-          <h1>Nice Curves</h1>
+          <h1>Educacion, Cursos y Certificados</h1>
           <p>Lorem ipsum</p>
         </div>
       </div>
