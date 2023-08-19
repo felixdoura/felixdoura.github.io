@@ -10,13 +10,13 @@
 
 .hero-wrapper {
     display: flex;
-    gap: 8rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 

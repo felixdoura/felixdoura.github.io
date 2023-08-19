@@ -6,8 +6,10 @@ function SectionAbout() {
     <>
       <div className='about-container'>
         <div className='about-wrapper'>
-          <h1>Nice Curves</h1>
-          <p>Lorem ipsum</p>
+          <h1>Sobre Mi</h1>
+          <p><br />Mi nombre es Felix Doura, soy programador Full Stack con habilidades en React, JavaScript, HTML, CSS, Node y relaciones con APIs, además de una sólida comprensión de bases de datos. Con un año de experiencia en desarrollo de páginas web, estoy buscando una oportunidad de trabajo como desarrollador web en un entorno dinámico y desafiante.
+          <br /> <br />
+          Creo y siento que tengo mucho potencial para aportar a cualquier equipo de desarrollo. Poseo conocimiento técnico y entusiasmo por aprender y crecer, soy capaz de enfrentar cualquier desafío que se presente en el camino. Además, tengo pasión por el trabajo en equipo y siento que tengo la capacidad para colaborar eficazmente con colegas y resolver problemas desde distintos puntos de vista.</p>
         </div>
         <div className="about-divider">
           <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

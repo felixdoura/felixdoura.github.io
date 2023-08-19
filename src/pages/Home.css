@@ -34,7 +34,7 @@
 
 .stack-section {
     padding: 3rem 10rem;
-    background-color: blue;
+    background-color: #03254C;
     color: white;
     height: 85%;
     width: 100%;
@@ -46,7 +46,7 @@
 
 .portfolio-section {
     padding: 3rem 10rem;
-    background-color: blue;
+    background-color: #03254C;
     color: white;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .education-top-divider .shape-fill {
-    fill: blue;
+    fill: #03254C;
 }
 
 @media screen and (max-width: 990px) {
