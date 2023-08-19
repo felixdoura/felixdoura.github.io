@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/felixdoura.github.io/static/css/main.3609a19e.css",
-    "main.js": "/felixdoura.github.io/static/js/main.08350967.js",
+    "main.css": "/felixdoura.github.io/static/css/main.f7623f5c.css",
+    "main.js": "/felixdoura.github.io/static/js/main.3aa51482.js",
     "index.html": "/felixdoura.github.io/index.html",
     "static/media/bg-social-media.svg": "/felixdoura.github.io/static/media/bg-social-media.5313d0bb59bdbd6efb48.svg",
-    "main.3609a19e.css.map": "/felixdoura.github.io/static/css/main.3609a19e.css.map",
-    "main.08350967.js.map": "/felixdoura.github.io/static/js/main.08350967.js.map"
+    "main.f7623f5c.css.map": "/felixdoura.github.io/static/css/main.f7623f5c.css.map",
+    "main.3aa51482.js.map": "/felixdoura.github.io/static/js/main.3aa51482.js.map"
   },
   "entrypoints": [
-    "static/css/main.3609a19e.css",
-    "static/js/main.08350967.js"
+    "static/css/main.f7623f5c.css",
+    "static/js/main.3aa51482.js"
   ]
 }
