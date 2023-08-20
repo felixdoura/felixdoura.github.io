@@ -5,3 +5,25 @@
     align-items: center;
     min-height: 400px;
 }
+
+.stack-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.stack-info {
+    padding: 1rem 0 1rem 0;
+}
+
+.stack-card-container {
+    max-width: 12rem;
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 990px) {
+    .stack-card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
