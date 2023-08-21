@@ -21,12 +21,11 @@ const Home = () => {
         <HeroSection />
       </section>
 
-
-      {/* ------------- */}
-      {/* ABOUT SECTION */}
-      {/* ------------- */}
       <div className='sections'>
 
+        {/* ------------- */}
+        {/* ABOUT SECTION */}
+        {/* ------------- */}
         <section className='about-section'>
           <SectionAbout />
         </section>

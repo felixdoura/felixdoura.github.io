@@ -7,7 +7,7 @@ function SectionStack() {
     <>
       <div className='stack-container'>
         <div className='stack-wrapper'>
-          <div>
+          <div className='stack-heading'>
             <h1>Stack y Tecnologías</h1>
             <p className='stack-info'>En la siguiente sección, se pueden encontrar los lenguajes, frameworks, librerías y otras tecnologías en las que tengo conocimiento y experiencia.</p>
           </div>

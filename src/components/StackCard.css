@@ -6,7 +6,17 @@
     width: 120px;
     height: 100%;
     cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.5);
 }
+
+.stack-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 .stack-img-container {
     gap: 0.5rem;
@@ -23,9 +33,4 @@
     font-size: 1rem;
     margin: 0;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 0.3rem;
 }
