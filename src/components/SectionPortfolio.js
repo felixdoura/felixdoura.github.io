@@ -25,6 +25,18 @@ const SectionPortfolio = () => {
 
             <div className='portfolio-card-container'>
               <PortfolioCard
+                img={process.env.PUBLIC_URL + '/images/portfolio-images/eduazadori.jpeg'}
+                title={"Sitio Web Edua Zadori"}
+                summary={"Este sitio web es un proyecto desarrollado previamente por otras personas en WordPress y mi trabajo fue el agregarle nuevos componentes y paginas."}
+                url={"http://www.eduazadory.com/"}
+                cta={"Link al Sitio Web"}
+                repository={"/"}
+                repocta={"Este Repositorio Es Privado"}
+              />
+            </div>
+
+            <div className='portfolio-card-container'>
+              <PortfolioCard
                 img={process.env.PUBLIC_URL + '/images/portfolio-images/gaorfid.jpeg'}
                 title={"Sitio Web GAOTek RFID"}
                 summary={"Este sitio web fue desarrollado mediante equipos de trabajo, de los cuales me toco coordinar a 10 personas para realizar el diseño y codigo de diferentes entradas del mismo."}
@@ -35,7 +47,7 @@ const SectionPortfolio = () => {
               />
             </div>
 
-            <div className='portfolio-card-container'>
+            <div data-aos="fade-right" className='portfolio-card-container'>
               <PortfolioCard
                 img={process.env.PUBLIC_URL + '/images/portfolio-images/alarmasyseg.jpeg'}
                 title={"Alarmas y Seguridad"}
@@ -58,7 +70,7 @@ const SectionPortfolio = () => {
                 repocta={"Link al Repositorio"}
               />
             </div>
-            
+
             <div data-aos="fade-right" className='portfolio-card-container'>
               <PortfolioCard
                 img={process.env.PUBLIC_URL + '/images/portfolio-images/digitex.jpeg'}
