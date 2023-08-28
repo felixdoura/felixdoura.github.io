@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import HeroSection from '../components/HeroSection'
-import { BsDiscord, BsTwitter } from 'react-icons/bs'
+import { BsDiscord, BsGithub, BsTwitter } from 'react-icons/bs'
 import { FaLinkedinIn } from 'react-icons/fa'
 // import WaterButton from '../components/WaterButton'
 import SectionAbout from '../components/SectionAbout'
@@ -77,6 +77,14 @@ const Home = () => {
 
             <div className='social-media-button'>
               <a
+                href='https://github.com/felixdoura/'
+                className='github-link'
+              >
+                <BsGithub />
+              </a>
+            </div>
+            <div className='social-media-button'>
+              <a
                 href='https://discord.gg/Km899xDQWV'
                 className='discord-link'
               >
@@ -99,14 +107,7 @@ const Home = () => {
                 <BsTwitter />
               </a>
             </div>
-            <div className='social-media-button'>
-              <a
-                href='https://discord.gg/Km899xDQWV'
-                className='discord-link'
-              >
-                <BsDiscord />
-              </a>
-            </div>
+
           </div>
         </div>
       </section>

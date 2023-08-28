@@ -102,6 +102,14 @@ function SectionStack() {
               />
             </div>
 
+            <div className='stack-card-container'>
+              <StackCard
+                name={"WordPress"}
+                image={process.env.PUBLIC_URL + '/images/stack-images/wordpress.png'}
+                url={"https://wordpress.com/es/"}
+              />
+            </div>
+
           </div>
         </div>
       </div>
