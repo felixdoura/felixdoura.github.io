@@ -6,7 +6,7 @@ function Footer() {
         <>
             <footer className='footer-container'>
                 <div>
-                    <h1>Hello</h1>
+                    <h1>Footer Section: Disclaim and Stuff</h1>
                 </div>
             </footer>
         </>

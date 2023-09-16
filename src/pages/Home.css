@@ -1,30 +1,171 @@
+.sections {
+    background-color: black;
+}
+
 /* ------------ */
 /* HERO SECTION */
 /* ------------ */
 
 .hero-section {
-    padding: 4rem 10rem;
+    padding: 3rem 10rem;
+}
+
+@media screen and (max-width: 990px) {
+    .hero-section {
+        padding: 1rem 4rem;
+    }
+}
+
+
+/* ------------- */
+/* ABOUT SECTION */
+/* ------------- */
+
+.about-section {
+    background-color: black;
+    color: white;
 }
 
 
 
+/* ------------- */
+/* STACK SECTION */
+/* ------------- */
+
+.stack-section {
+    padding: 3rem 10rem;
+    background-color: #03254C;
+    color: white;
+    height: 85%;
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .stack-section {
+        padding: 1rem 2rem;
+    }
+}
+
+/* ----------------- */
+/* PORTFOLIO SECTION */
+/* ----------------- */
+
+.portfolio-section {
+    padding: 3rem 10rem;
+    background-color: #03254C;
+    color: white;
+}
+
+@media screen and (max-width: 990px) {
+    .portfolio-section {
+        padding: 2rem 1rem;
+    }
+}
 
 
+/* ----------------- */
+/* EXPERIENCE SECTION */
+/* ----------------- */
 
+.experience-section {
+    padding: 14rem 10rem 3rem 10rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(147, 28, 28, 1) 65%, rgba(147, 28, 28, 1) 100%);
+    color: white;
+    position: relative;
+}
 
+.experience-top-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.experience-top-divider svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 171px;
+    transform: rotateY(180deg);
+}
+
+.experience-top-divider .shape-fill {
+    fill: #03254C;
+}
+
+@media screen and (max-width: 990px) {
+    .experience-top-divider svg {
+        height: 70px;
+    }
+}
+
+/* ----------------- */
+/* EDUCATION SECTION */
+/* ----------------- */
+
+.education-section {
+    padding: 4rem 10rem;
+    background: #931C1C;
+    color: white;
+    position: relative;
+}
+
+.education-top-divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.education-top-divider svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 171px;
+    transform: rotateY(180deg);
+}
+
+.education-top-divider .shape-fill {
+    fill: #03254C;
+}
+
+@media screen and (max-width: 990px) {
+    .education-top-divider svg {
+        height: 70px;
+    }
+}
 
 /* -------------------- */
 /* SOCIAL MEDIA SECTION */
 /* -------------------- */
 
+.bg-social-media {
+    aspect-ratio: 1800/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-layer {
+    background-image: url('../../public/images/bg-social-media.svg');
+}
+
+
 .social-media-section {
-    padding: 4rem 10rem;
+    background-color: #931C1C;
 }
 
 .social-media-buttons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 2rem 10rem 0 10rem;
 }
 
 .social-media-button {
@@ -57,4 +198,24 @@
 
 .social-media-button a:hover {
     color: lightgray;
+}
+
+.github-link {
+    color: #171515;
+}
+
+.discord-link {
+    color: #5865F2
+}
+
+
+
+@media screen and (max-width: 990px) {
+    .social-media-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem 2rem 12rem 2rem;
+        justify-items: center;
+    }
 }

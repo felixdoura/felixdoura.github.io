@@ -1,0 +1,48 @@
+.stack-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.stack-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.stack-heading {
+    text-align: center;
+}
+
+.stack-info {
+    padding: 1rem 0 1rem 0;
+}
+
+.stack-card-container {
+    max-width: 12rem;
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 990px) {
+    .stack-card-container {
+        max-width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stack-card-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .stack-card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

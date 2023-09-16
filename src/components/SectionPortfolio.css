@@ -1,0 +1,30 @@
+.portfolio-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-heading {
+    text-align: center;
+}
+
+.portfolio-info {
+    padding: 1rem 0 1rem 0;
+}
+
+.portfolio-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

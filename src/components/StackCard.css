@@ -1,0 +1,36 @@
+.stack-card {
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    width: 120px;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.5);
+}
+
+.stack-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.stack-img-container {
+    gap: 0.5rem;
+}
+
+.stack-image {
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.stack-item-name {
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
