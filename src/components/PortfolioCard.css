@@ -1,7 +1,7 @@
 .portfolio-card {
     background-color: white;
     color: black;
-    height: 30rem;
+    height: 34rem;
     width: 100%;
     border-radius: 5px;
     margin: 2rem;
@@ -18,7 +18,6 @@
 
 .card-left-part {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
