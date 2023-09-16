@@ -58,7 +58,7 @@
 
 @media screen and (max-width: 990px) {
     .portfolio-section {
-        padding: 2rem 1rem;
+        padding: 2rem 0;
     }
 }
 
@@ -68,7 +68,7 @@
 /* ----------------- */
 
 .experience-section {
-    padding: 14rem 10rem 3rem 10rem;
+    padding: 14rem 6rem 3rem 6rem;
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(147, 28, 28, 1) 65%, rgba(147, 28, 28, 1) 100%);
     color: white;
@@ -99,6 +99,10 @@
 @media screen and (max-width: 990px) {
     .experience-top-divider svg {
         height: 70px;
+    }
+
+    .experience-section {
+    padding: 14rem 2rem 1rem 2rem;
     }
 }
 
@@ -137,6 +141,10 @@
 @media screen and (max-width: 990px) {
     .education-top-divider svg {
         height: 70px;
+    }
+
+    .education-section {
+        padding: 1rem 2rem;
     }
 }
 
@@ -215,7 +223,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        padding: 1rem 2rem 12rem 2rem;
+        padding: 1rem 2rem 16rem 2rem;
         justify-items: center;
     }
 }

@@ -17,7 +17,6 @@
     justify-content: space-between;
 }
 
-
 .stack-img-container {
     gap: 0.5rem;
 }
@@ -33,4 +32,10 @@
     font-size: 1rem;
     margin: 0;
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    .stack-image {
+        width: 100%;
+    }
 }
