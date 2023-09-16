@@ -29,12 +29,22 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                PRODUCTOS
+                STACK Y TECNOLOGIAS
               </Link>
             </li>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                SERVICIOS
+                PORTFOLIO
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                EXPERIENCIAS LABORALES
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                EDUCACION
               </Link>
             </li>
             <li className='nav-item'>

@@ -28,3 +28,18 @@
     justify-content: center;
     width: 100%;
 }
+
+@media screen and (max-width: 990px) {
+    .portfolio-heading {
+        text-align: center;
+        padding: 0rem 8rem;
+    }
+
+    .portfolio-container {
+        overflow-x: hidden;
+    }
+
+    .portfolio-card-wrapper {
+        padding: 0 4rem 2rem 4rem;
+    }
+}

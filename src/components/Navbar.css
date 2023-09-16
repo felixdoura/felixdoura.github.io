@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -48,8 +48,7 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-template-columns: repeat(6, auto);
     list-style: none;
     text-align: center;
     width: 60vw;
@@ -87,6 +86,10 @@
 }
 
 @media screen and (max-width: 960px) {
+    .navbar {
+        font-size: 1.2rem;
+    }
+
     .NavbarItems {
         position: relative;
     }
@@ -98,6 +101,7 @@
         position: absolute;
         top: 80px;
         left: -100%;
+        grid-gap: 10px;
         opacity: 1;
         transition: all 0.5s ease;
         padding-top: 20px;
@@ -105,7 +109,7 @@
     }
 
     .nav-menu.active {
-        background: #242222;
+        background: linear-gradient(90deg, rgb(28, 27, 27) 0%, #002868 100%);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -129,6 +133,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 80px;
     }
 
     .menu-icon {

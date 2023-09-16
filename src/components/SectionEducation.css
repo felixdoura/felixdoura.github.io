@@ -1,0 +1,36 @@
+.education-container {
+    padding: 3rem 8rem 10rem 8rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    max-width: 100%;
+}
+
+.education-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.education-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.education-card-container {
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .education-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .education-container {
+        padding: 3rem 8rem 3rem 8rem;
+    }
+}
