@@ -88,6 +88,14 @@ function SectionStack() {
 
             <div className='stack-card-container'>
               <StackCard
+                name={"Flask"}
+                image={process.env.PUBLIC_URL + '/images/stack-images/flask.png'}
+                url={"https://flask.palletsprojects.com/"}
+              />
+            </div>
+
+            <div className='stack-card-container'>
+              <StackCard
                 name={"SASS"}
                 image={process.env.PUBLIC_URL + '/images/stack-images/sass.png'}
                 url={"https://sass-lang.com/"}

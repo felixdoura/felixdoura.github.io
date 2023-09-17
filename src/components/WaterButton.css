@@ -10,13 +10,14 @@
   
   .water-button {
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 20px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    width: 200px;
+    width: 315px;
     overflow: hidden;
     border-radius: 40px;
+    text-align: center;
   }
   
   .water-button span {
@@ -30,24 +31,24 @@
   
   .water-button .liquid {
     position: absolute;
-    top: -80px;
+    top: -195px;
     left: 0;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     background: #4973ff;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 50px rgb(0 0 0 / 50%);
     transition: .5s;
   }
   
   .water-button .liquid::after,
   .water-button .liquid::before {
     content: '';
-    width: 200%;
-    height: 200%;
+    width: 220%;
+    height: 220%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
+    left: 35%;
+    transform: translate(170%, 75%);
     background: #000;
   }
   
