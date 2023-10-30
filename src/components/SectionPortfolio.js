@@ -47,7 +47,7 @@ const SectionPortfolio = () => {
               />
             </div>
 
-            <div data-aos="fade-right" className='portfolio-card-container'>
+            <div data-aos="fade-left" className='portfolio-card-container'>
               <PortfolioCard
                 img={process.env.PUBLIC_URL + '/images/portfolio-images/alarmasyseg.jpeg'}
                 title={"Alarmas y Seguridad"}
@@ -59,7 +59,7 @@ const SectionPortfolio = () => {
               />
             </div>
 
-            <div data-aos="fade-left" className='portfolio-card-container'>
+            <div data-aos="fade-right" className='portfolio-card-container'>
               <PortfolioCard
                 img={process.env.PUBLIC_URL + '/images/portfolio-images/costasolar.jpeg'}
                 title={"Costa Solar Energias Renovables"}
@@ -67,6 +67,18 @@ const SectionPortfolio = () => {
                 url={"http://costasolar.com.ar"}
                 cta={"Link al Sitio Web"}
                 repository={"https://github.com/felixdoura/costa-solar-energia"}
+                repocta={"Link al Repositorio"}
+              />
+            </div>
+
+            <div data-aos="fade-left" className='portfolio-card-container'>
+              <PortfolioCard
+                img={process.env.PUBLIC_URL + '/images/portfolio-images/starship-screenshot.jpeg'}
+                title={"Videojuego Naves Espaciales"}
+                summary={"Este es mi primer videojuego, realizado en el motor LÖVE2D y programado en Lua. Es un juego en 2D realizado integramente por mi."}
+                url={"https://felixdoura.itch.io/felix-starship-portfolio-game"}
+                cta={"Link al Proyecto"}
+                repository={"https://github.com/felixdoura/cs50-spaceship-finalproject"}
                 repocta={"Link al Repositorio"}
               />
             </div>

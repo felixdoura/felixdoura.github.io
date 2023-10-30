@@ -26,7 +26,7 @@ const Home = () => {
         {/* ------------- */}
         {/* ABOUT SECTION */}
         {/* ------------- */}
-        <section className='about-section'>
+        <section id='about-section' className='about-section'>
           <SectionAbout />
         </section>
 
@@ -34,7 +34,7 @@ const Home = () => {
         {/* ------------- */}
         {/* STACK SECTION */}
         {/* ------------- */}
-        <section className='stack-section'>
+        <section id='stack-section' className='stack-section'>
           <SectionStack />
         </section>
 
@@ -42,7 +42,7 @@ const Home = () => {
         {/* ----------------- */}
         {/* PORTFOLIO SECTION */}
         {/* ----------------- */}
-        <section className='portfolio-section'>
+        <section id='portfolio-section' className='portfolio-section'>
           <SectionPortfolio />
         </section>
 
@@ -50,7 +50,7 @@ const Home = () => {
         {/* ------------------ */}
         {/* EXPERIENCE SECTION */}
         {/* ------------------ */}
-        <section className='experience-section'>
+        <section id='experience-section' className='experience-section'>
           <SectionExperience />
         </section>
 
@@ -58,7 +58,7 @@ const Home = () => {
         {/* ----------------- */}
         {/* EDUCATION SECTION */}
         {/* ----------------- */}
-        <section className='education-section'>
+        <section id='education-section' className='education-section'>
           <SectionEducation />
         </section>
 
@@ -70,7 +70,7 @@ const Home = () => {
       {/* -------------------- */}
       {/* SOCIAL MEDIA SECTION */}
       {/* -------------------- */}
-      <section className='social-media-section'>
+      <section id='social-media-section' className='social-media-section'>
 
         <div className='bg-social-media bg-layer'>
           <div className='social-media-buttons'>

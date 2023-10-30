@@ -31,7 +31,7 @@ function SectionEducation() {
                 title={"Ciencias de la Computacion 50"}
                 school={"Harvard University - Boston, Estados Unidos"}
                 date={"2023"}
-                // certificateurl={process.env.PUBLIC_URL + "/images/certificates/Certificado-Desarrollador-Fullstack-Digita-House-Felix-Doura.pdf"}
+                certificateurl={process.env.PUBLIC_URL + "/images/certificates/CS50x.pdf"}
                 certificatename={"Ver Certificado"}
                 edimg={process.env.PUBLIC_URL + "/images/education-images/harvard-logo.png"}
               />

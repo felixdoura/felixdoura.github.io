@@ -28,29 +28,29 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='#stack-section' className='nav-links' onClick={closeMobileMenu}>
                 STACK Y TECNOLOGIAS
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='#portfolio-section' className='nav-links' onClick={closeMobileMenu}>
                 PORTFOLIO
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='#experience-section' className='nav-links' onClick={closeMobileMenu}>
                 EXPERIENCIAS LABORALES
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='education-section' className='nav-links' onClick={closeMobileMenu}>
                 EDUCACION
-              </Link>
+              </a>
             </li>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='social-media-section' className='nav-links' onClick={closeMobileMenu}>
                 CONTACTO
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

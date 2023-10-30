@@ -6,7 +6,7 @@ function Footer() {
         <>
             <footer className='footer-container'>
                 <div>
-                    <h1>Footer Section: Disclaim and Stuff</h1>
+                    <h1>Felix Doura - Desarrollador Fullstack - Todos los derechos reservados 2023</h1>
                 </div>
             </footer>
         </>
