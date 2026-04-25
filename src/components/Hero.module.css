@@ -1,0 +1,163 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 48px 80px;
+  overflow: hidden;
+}
+
+.gridBg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 255, 180, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 180, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--neon);
+  letter-spacing: 0.18em;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.statusDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--neon);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 180, 0.5); }
+  50% { box-shadow: 0 0 0 6px rgba(0, 255, 180, 0); }
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 8vw, 80px);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.firstName {
+  color: var(--text-primary);
+}
+
+.lastName {
+  color: var(--neon);
+}
+
+.tagline {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  color: rgba(226, 232, 240, 0.6);
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.taglineSub {
+  color: rgba(226, 232, 240, 0.4);
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 5px 12px;
+  border: 1px solid rgba(0, 255, 180, 0.25);
+  color: var(--neon);
+  letter-spacing: 0.1em;
+  background: rgba(0, 255, 180, 0.04);
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 11px 24px;
+  background: var(--neon);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btnPrimary:hover {
+  opacity: 0.88;
+}
+
+.btnPrimary:active {
+  transform: scale(0.98);
+}
+
+.btnGhost {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  padding: 11px 24px;
+  background: transparent;
+  color: var(--neon);
+  border: 1px solid rgba(0, 255, 180, 0.35);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btnGhost:hover {
+  background: rgba(0, 255, 180, 0.06);
+  border-color: rgba(0, 255, 180, 0.6);
+}
+
+.scanLine {
+  position: absolute;
+  bottom: 0;
+  left: 48px;
+  right: 48px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 180, 0.3), transparent);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 100px 20px 60px;
+  }
+  .scanLine {
+    left: 20px;
+    right: 20px;
+  }
+}

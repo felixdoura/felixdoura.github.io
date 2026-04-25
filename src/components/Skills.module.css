@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.group {
+  background: rgba(0, 255, 180, 0.03);
+  border: 1px solid rgba(0, 255, 180, 0.1);
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.group:hover {
+  border-color: rgba(0, 255, 180, 0.25);
+}
+
+.groupName {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--neon);
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
+  opacity: 0.75;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: rgba(226, 232, 240, 0.6);
+  background: rgba(0, 255, 180, 0.06);
+  border: 1px solid rgba(0, 255, 180, 0.1);
+  padding: 3px 8px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.tag:hover {
+  color: var(--neon);
+  border-color: rgba(0, 255, 180, 0.3);
+}

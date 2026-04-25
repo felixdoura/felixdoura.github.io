@@ -1,0 +1,39 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: rgba(0, 255, 180, 0.03);
+  border: 1px solid rgba(0, 255, 180, 0.1);
+  padding: 18px 20px;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-color: rgba(0, 255, 180, 0.25);
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--neon);
+  letter-spacing: 0.14em;
+  margin-bottom: 10px;
+  opacity: 0.75;
+  text-transform: lowercase;
+}
+
+.cardValue {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: rgba(226, 232, 240, 0.72);
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
