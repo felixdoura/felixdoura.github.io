@@ -37,19 +37,27 @@ export const personal = {
 export const skills = [
   {
     name: "Game dev",
-    items: ["Unity", "Unreal Engine", "C#", "C++", "WebGL", "Itch.io"],
+    items: ["Unity", "Unreal Engine", "WebGL", "Itch.io"],
   },
   {
-    name: "Frontend",
-    items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "SASS", "Bootstrap"],
+    name: "Languages",
+    items: ["JavaScript", "Python", "C", "C++", "C#", "PHP"],
+  },
+  {
+    name: "Frontend Frameworks & Libraries",
+    items: ["React", "React-Redux", "Angular", "Next.js", "Vue.js"],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Express", ".NET", "Python", "Flask"],
+    items: ["Node.js", "Express", ".NET", "Flask"],
   },
   {
     name: "Databases",
     items: ["MySQL", "MariaDB", "MongoDB"],
+  },
+  {
+    name: "Monitoring",
+    items: ["Elastic", "Dynatrace", "PRTG"],
   },
   {
     name: "Tools & design",
