@@ -36,35 +36,31 @@ export const personal = {
 
 export const skills = [
   {
-    name: "Leadership",
-    items: ["Technology Strategy", "Team Management", "Executive Advisory", "Agile / Scrum", "Stakeholder Mgmt", "Budget Oversight"],
+    name: "Game dev",
+    items: ["Unity", "Unreal Engine", "WebGL", "Itch.io"],
   },
   {
-    name: "Engineering",
-    items: ["Full Stack Dev", "Cloud Architecture", "On-Premise Infra", "API Design", "CI/CD", "DevOps", "QA"],
+    name: "Languages",
+    items: ["JavaScript", "Python", "C", "C++", "C#", "PHP"],
   },
   {
-    name: "AI & Data",
-    items: ["AI Integration", "AI Productivity", "Process Automation", "Systems Optimization"],
-  },
-  {
-    name: "Frontend",
-    items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "SASS"],
+    name: "Frontend Frameworks & Libraries",
+    items: ["React", "React-Redux", "Angular", "Next.js", "Vue.js"],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Express", ".NET", "Python", "Flask", "REST APIs"],
-  },
-  {
-    name: "Game Dev",
-    items: ["Unity", "Unreal Engine", "C#", "C++", "WebGL"],
+    items: ["Node.js", "Express", ".NET", "Flask"],
   },
   {
     name: "Databases",
     items: ["MySQL", "MariaDB", "MongoDB"],
   },
   {
-    name: "Tools",
+    name: "Monitoring",
+    items: ["Elastic", "Dynatrace", "PRTG"],
+  },
+  {
+    name: "Tools & design",
     items: ["Git", "GitHub Actions", "Postman", "Figma"],
   },
 ];
