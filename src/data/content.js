@@ -3,56 +3,68 @@ export const personal = {
   handle: "felixdoura",
   tagline: "I build software people play and use —",
   taglineSub: "from pixel interfaces to game worlds.",
-  status: "Currently working at the Goverment of the City of Buenos Aires",
+  status: "open to new opportunities",
   location: "Buenos Aires, Argentina",
   email: "felixdoura@gmail.com",
+  phone: "(+54) 11 3208 2425",
   github: "https://github.com/felixdoura",
   linkedin: "https://www.linkedin.com/in/felixdoura/",
-  twitter: "https://twitter.com/felixdoura",
   portfolio: "https://felixdoura.github.io",
-  roles: ["Tech Leader", "Software Developer", "C.P.O."],
+  roles: ["Tech Lead ", "Software Developer", "Chief Product Officer", "Game Developer"],
   about: [
     {
-      label: "Background",
+      label: "Summary",
       value:
-        "Developer with experience building web applications end-to-end and shipping games. I work at the intersection of software engineering, interactive experiences, and technical leadership.",
+        "Technology executive with a proven track record bridging strategic leadership and hands-on technical execution. Full Stack engineer and AI specialist with deep expertise in cloud and on-premise architectures, agile delivery, and cross-functional team operations.",
     },
     {
       label: "Currently",
       value:
-        "Deputy Manager at Dirección General de Sistemas de Atención Ciudadana, Gobierno de la Ciudad de Buenos Aires.",
+        "Chief of Staff at the Government of the City of Buenos Aires, overseeing strategic coordination across ministerial areas and driving digital transformation initiatives at scale.",
     },
     {
       label: "Education",
-      value: "Software Engineering, Computer Science, Videogame Development & Fullstack Web Programming",
+      value:
+        "Software Engineering — Universidad de Belgrano (in progress, exp. 2028). CS50 — Harvard University (2023). Videogame Development & Design — Image Campus.",
     },
     {
-      label: "Interests",
-      value:
-        "Game jams, open source tooling, interactive web experiences, and pushing Unity's WebGL builds to their limits.",
+      label: "Languages",
+      value: "Spanish — Native · English — Professional",
     },
   ],
 };
 
 export const skills = [
   {
-    name: "Game dev",
-    items: ["Unity", "Unreal Engine", "C#", "C++", "WebGL", "Itch.io"],
+    name: "Leadership",
+    items: ["Technology Strategy", "Team Management", "Executive Advisory", "Agile / Scrum", "Stakeholder Mgmt", "Budget Oversight"],
+  },
+  {
+    name: "Engineering",
+    items: ["Full Stack Dev", "Cloud Architecture", "On-Premise Infra", "API Design", "CI/CD", "DevOps", "QA"],
+  },
+  {
+    name: "AI & Data",
+    items: ["AI Integration", "AI Productivity", "Process Automation", "Systems Optimization"],
   },
   {
     name: "Frontend",
-    items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "SASS", "Bootstrap"],
+    items: ["React", "Next.js", "Vue.js", "TypeScript", "Tailwind CSS", "SASS"],
   },
   {
     name: "Backend",
-    items: ["Node.js", "Express", ".NET", "Python", "Flask"],
+    items: ["Node.js", "Express", ".NET", "Python", "Flask", "REST APIs"],
+  },
+  {
+    name: "Game Dev",
+    items: ["Unity", "Unreal Engine", "C#", "C++", "WebGL"],
   },
   {
     name: "Databases",
     items: ["MySQL", "MariaDB", "MongoDB"],
   },
   {
-    name: "Tools & design",
+    name: "Tools",
     items: ["Git", "GitHub Actions", "Postman", "Figma"],
   },
 ];
@@ -60,28 +72,47 @@ export const skills = [
 export const experience = [
   {
     role: "Chief of Staff",
-    company: "Dirección General de Sistemas de Atención Ciudadana (DGSACIU)",
-    org: "Gobierno de la Ciudad de Buenos Aires",
-    period: "2023 — present",
-    description:
-      "Tech leadership in the digital systems division of the Buenos Aires city government. Coordination across engineering teams, architecture decisions, and delivery ownership for citizen-facing platforms.",
+    company: "Government of the City of Buenos Aires",
+    org: "Public Sector",
+    period: "Current",
+    bullets: [
+      "Lead strategic coordination across ministerial areas, aligning projects and programs with government-wide KPIs.",
+      "Drive inter-ministerial technology and policy initiatives, supervising technical and budgetary reports.",
+      "Act as executive advisor to senior leadership, providing data-driven recommendations and process improvements.",
+      "Oversee compliance and monitoring of digital transformation roadmaps, ensuring on-time delivery of high-impact programs.",
+    ],
   },
   {
-    role: "Frontend Developer",
-    company: "Alarmas & Seguridad",
-    org: "Buenos Aires",
-    period: "2022 — 2023",
-    description:
-      "Built and maintained web interfaces for a security company. Focused on responsive UI, performance optimization, and integration with backend services.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "GAOTek",
+    role: "Freelance Full Stack Web Developer",
+    company: "Multiple Clients",
     org: "Remote",
-    period: "2021 — 2022",
-    description:
-      "Developed frontend components and contributed to product UI for an international electronics company.",
+    period: "Previous",
+    bullets: [
+      "Designed, developed, and deployed end-to-end web applications managing full front-end and back-end architecture.",
+      "Integrated RESTful APIs, implemented authentication and security best practices, and optimized for high-availability.",
+      "Managed hosting, CI/CD pipelines, version control, and ongoing maintenance for reliable digital solutions.",
+      "Delivered responsive UIs alongside scalable server-side systems, consistently meeting client timelines.",
+    ],
   },
+  {
+    role: "Sales Supervisor",
+    company: "Work & Fun Ltd.",
+    org: "Buenos Aires",
+    period: "Previous",
+    bullets: [
+      "Oversaw daily sales operations and led a team toward performance targets.",
+      "Optimized workflows to improve operational efficiency and contributed to forecasting activities.",
+      "Coordinated with senior management to implement promotional and commercial initiatives.",
+    ],
+  },
+];
+
+export const certifications = [
+  { name: "CS50 — Computer Science", issuer: "Harvard University", year: "2023" },
+  { name: "Full Stack Web Developer", issuer: "Digital House", year: "" },
+  { name: "Videogame Development & Design", issuer: "Image Campus", year: "" },
+  { name: "Public Policy & Project Management", issuer: "Universidad Siglo 21", year: "" },
+  { name: "AI Productivity", issuer: "EducaciónIT", year: "" },
 ];
 
 export const projects = [
