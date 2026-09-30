@@ -174,6 +174,17 @@ export const certifications = [
 // ("gamedev", "webdev", ...). To add a project, copy one of these objects.
 export const projects = [
   {
+    type: "webdev",
+    name: "Innova Desarrollo Social",
+    description: {
+      en: "Education platform with student accounts, course catalog, multiple payment methods and a custom admin panel. Students see all their courses in one place and download receipts and certificates; the team manages courses, pricing, payments, enrollments, coupons and certificates from the web.",
+      es: "Plataforma educativa con cuentas de usuario, catálogo de cursos, varios medios de pago y un panel de administración propio. Cada alumna o alumno ve todos sus cursos en un solo lugar y descarga sus comprobantes y certificados; el equipo gestiona cursos, precios, pagos, inscriptos, cupones y certificados desde la web.",
+    },
+    tags: ["React", "Vite", "Netlify Functions", "Supabase", "Mercado Pago", "Resend"],
+    url: "https://innovatrabajosocial.com.ar/",
+    repo: null,
+  },
+  {
     type: "gamedev",
     name: "Felix Starship",
     description: {
