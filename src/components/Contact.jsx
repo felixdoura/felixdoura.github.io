@@ -1,5 +1,6 @@
 import React from "react";
 import { personal } from "../data/content";
+import { useLang } from "../i18n";
 import styles from "./Section.module.css";
 import s from "./Contact.module.css";
 
@@ -7,20 +8,20 @@ const links = [
   { label: "email", href: `mailto:${personal.email}`, text: personal.email },
   { label: "linkedin", href: personal.linkedin, text: "felixdoura" },
   { label: "github", href: personal.github, text: "github.com/felixdoura" },
-  { label: "twitter", href: personal.twitter, text: "@felixdoura" },
 ];
 
 export default function Contact() {
+  const { t } = useLang();
   return (
     <>
       <section id="contact" className={styles.section}>
         <div className={styles.inner}>
           <p className={styles.sectionLabel}>// 05</p>
-          <h2 className={styles.sectionTitle}>Contact</h2>
+          <h2 className={styles.sectionTitle}>{t.sections.contact}</h2>
           <p className={s.intro}>
-            Open to fullstack, game development and tech lead opportunities.
+            {t.contact.intro}
             <br />
-            Let's talk.
+            {t.contact.cta}
           </p>
           <div className={s.links}>
             {links.map((l) => (
@@ -34,7 +35,7 @@ export default function Contact() {
       </section>
       <footer className={s.footer}>
         <span className={s.footerText}>felix doura © {new Date().getFullYear()}</span>
-        <span className={s.footerText}>built with React · GitHub Pages</span>
+        <span className={s.footerText}>{t.contact.builtWith}</span>
       </footer>
     </>
   );

@@ -72,14 +72,59 @@
   color: var(--neon);
 }
 
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.langSwitch {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: transparent;
+  border: 1px solid var(--border-neon-hover);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.langOption,
+.langActive {
+  padding: 3px 7px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.langOption {
+  color: rgba(226, 232, 240, 0.45);
+}
+
+.langActive {
+  background: var(--neon);
+  color: var(--bg);
+  font-weight: 500;
+}
+
+.langSwitch:hover .langOption {
+  color: var(--neon);
+}
+
+.langSwitch:focus-visible {
+  outline: 2px solid var(--neon);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .links {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .nav {
     padding: 14px 20px;
-  }
-  .links {
-    gap: 16px;
-  }
-  .link {
-    font-size: 10px;
   }
 }
