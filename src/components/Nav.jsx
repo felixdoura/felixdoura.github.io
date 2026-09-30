@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { personal } from "../data/content";
+import { useLang, LANGS } from "../i18n";
 import styles from "./Nav.module.css";
 
 const links = ["about", "skills", "projects", "experience", "contact"];
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const { lang, setLang, t } = useLang();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -23,15 +25,29 @@ export default function Nav() {
         <span className={styles.logoText}>{personal.handle}</span>
         <span className={styles.cursor} />
       </div>
-      <ul className={styles.links}>
-        {links.map((l) => (
-          <li key={l}>
-            <button onClick={() => scrollTo(l)} className={styles.link}>
+      <div className={styles.right}>
+        <ul className={styles.links}>
+          {links.map((l) => (
+            <li key={l}>
+              <button onClick={() => scrollTo(l)} className={styles.link}>
+                {t.nav[l]}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <button
+          className={styles.langSwitch}
+          onClick={() => setLang(lang === "en" ? "es" : "en")}
+          aria-label={t.langSwitch}
+          title={t.langSwitch}
+        >
+          {LANGS.map((l) => (
+            <span key={l} className={l === lang ? styles.langActive : styles.langOption}>
               {l}
-            </button>
-          </li>
-        ))}
-      </ul>
+            </span>
+          ))}
+        </button>
+      </div>
     </nav>
   );
 }
